@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'kallistoBold';
+  src: url('../Fonts/Kallisto Bold.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+.privacyPolicyBackground {
+  background-color: white;
+}
+
+.privacyPolicyButton {
+  width: 80%;
+  background-color: #F0E45D !important;
+  font-family: kallistoBold !important;
+  color: #413C58 !important;
+}
+
+.header {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  background-color: #F0E45D;
+  text-align: center;
+}
+
+.justified-text {
+  text-align: justify;
+}

@@ -1,8 +1,38 @@
+/*CSS RESET*/
+
 * {
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+/*CONTAINER + BACKGROUND IMAGE OF THE PAGE*/
+.cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/yvjdWyD.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/*FONTS IMPORT FROM LOCAL FOLDER*/
 @font-face {
   font-family: 'kallistoThin';
   src: url('../Fonts/Kallisto Thin.otf') format('opentype');
@@ -15,12 +45,61 @@
   /* Add other font properties if needed */
 }
 
-.eyeIcon {
-  color:white;
+@font-face {
+  font-family: 'kallistoLight';
+  src: url('../Fonts/Kallisto Light.otf') format('opentype');
+  /* Add other font properties if needed */
 }
+
+/*BACK BUTTON*/
+.backButton {
+  position:absolute;
+  top: 40px;
+  left: 10px;
+  padding: 15px;
+}
+
+/*MODAL*/
+
+.modalBox {
+  background-color: #413C58;
+}
+
+.modalBorder .modal-content {
+  border: 1px solid #F0E45D;
+  background-color: transparent;
+}
+
+.modalBorder .modal-dialog {
+  opacity: 0.8;
+}
+
+.modalBorder .modal-footer {
+  border: 0px;
+
+}
+
+.modalText {
+  text-align: center;
+  font-family: kallistoBold;
+  color: #F0E45D;
+}
+
+.yearsOldButton {
+  background-color: #55917F !important;
+  font-family: kallistoBold;
+}
+
+/*LUCKY BREAK PICTURE*/
+.luckyBreak {
+  padding-left: 15px;
+}
+
+/*FORM*/
 
 .forgotPass {
   color: #F0E45D;
+  text-decoration: none;
 }
 
 .rememberMe {
@@ -28,17 +107,48 @@
   color:white;
 }
 
+.loginOptionDivider {
+  font-family: kallistoBold;
+  color: white;
+}
+
 .button {
-  width: 100%;
+  width: 300px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
   background-color: #F0E45D !important;
   font-family: kallistoBold !important;
   color: #413C58 !important;
 }
 
+.FacebookLoginButton {
+  width: 300px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+  background-color: #3B5998 !important;
+  font-family: kallistoLight !important;
+}
+
+.GoogleLoginButton {
+  width: 300px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+  background-color: #EA4335 !important;
+  font-family: kallistoLight !important;
+}
+
+
+.wholeForm {
+  padding-top: 0px;
+}
+
 .userAndPassword {
   font-size: 0.9em !important;
-  padding-top:20px;
-  padding-bottom: 20px;
+  padding-top:10px !important;
+  padding-bottom: 10px !important;
   background-color: rgba(251, 251, 251, 0.3) !important; /* Transparent grey background */
   color: #FFFFFF !important;
 }
@@ -67,28 +177,12 @@
   color: #FFFFFF !important; /* Bright white placeholder color */
 }
 
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url("https://i.imgur.com/yvjdWyD.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
+/*BILLIARDS PEOPLE PICTURE*/
+.billiards {
+    position: absolute;
+    bottom: 0;
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 0.8s ease-in;
+.billiards__ {
+    width: 100vw; 
+    height: auto; 
 }

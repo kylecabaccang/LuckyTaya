@@ -1,0 +1,67 @@
+
+/*BACKGROUND IMAGE*/
+.background-image {
+  height: 100vh;
+  background-image: url("https://i.imgur.com/yvjdWyD.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'kallistoMedium';
+  src: url('../Fonts/Kallisto Medium.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+.sideNavBar {
+  font-family: kallistoMedium;
+}
+
+.sideNavBarDropdown {
+  background-color: #F0F0F0 !important;
+  padding-left: 3rem !important;
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
+  border-bottom: 2px solid #E0E0E0 !important;
+}
+
+.navBarRadius {
+  border-top-left-radius: 35px;
+}
+
+.dropdown-no-border .dropdown-menu {
+  border: none;
+  box-shadow: none;
+}
+
+.dropdown-no-border .dropdown-item {
+  border-bottom: none;
+}
+
+.dropdown-title {
+  color: black;
+  margin-left: 1.5rem;
+}
+
+.link-color {
+  color: black !important;
+}
+
+.main-logo {
+  height: 6vh;
+  margin-left: 5px;
+}
+
+.walletContainer {
+  border-radius: 25px;
+  background-color: #F0E45D;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #413C58;
+}
+
+.walletIcon {
+  height: 2vh;
+  width: 7vw;
+}

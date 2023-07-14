@@ -1,0 +1,211 @@
+/*CSS RESET*/
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/backgroundImageDesktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*IMPORT FONT(S)*/
+@font-face {
+  font-family: 'kallistoBold';
+  src: url('../Fonts/Kallisto Bold.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+/*CONTAINER + BACKGROUND IMAGE OF THE PAGE*/
+.parent-element {
+  max-width: none !important;
+}
+.landingContainer {
+  height: auto;
+  
+}
+
+/*FONTS IMPORT FROM LOCAL FOLDER*/
+@font-face {
+  font-family: 'kallistoThin';
+  src: url('../Fonts/Kallisto Thin.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+@font-face {
+  font-family: 'kallistoBold';
+  src: url('../Fonts/Kallisto Bold.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+/*LUCKY BREAK PICTURE*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.luckyBreakMobileContainer {
+  animation: fadeIn 0.7s;
+}
+
+@media (max-width: 415px) {
+  .luckyBreakPhoto {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1023px) {
+  .luckyBreakPhoto {
+    position: absolute;
+    width: 20vw;
+    display: block;
+    right: 20%;
+  }
+}
+
+/*QUOTE*/
+@media (max-width: 415px) {
+  .quote {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 1023px) {
+  .quote {
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    right: 15%;
+    top: 27%;
+  }
+}
+
+/*PHONE PICTURE*/
+@media (max-width: 415px) {
+  .phone {
+    z-index: 1;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1023px) {
+  .phone {
+    z-index: 1;
+    width: 50vw;
+    margin-right: auto;
+  }
+}
+
+/*BILLIARD PLAYERS PICTURE*/
+
+/*.billiardsLanding {
+  position: absolute;
+  top: 350px;
+  width: 98vw;
+  z-index:0;
+}*/
+
+@media (max-width: 415px) {
+  .billiardsLanding {
+    position: absolute;
+    top: 350px;
+    width: 98vw;
+    z-index:0;
+  }
+}
+
+@media (min-width: 1023px) {
+  .billiardsLanding {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index:-1;
+  }
+}
+
+
+/*LOGIN AND CREATE ACCOUNT BUTTONS*/
+
+@media (min-width: 1023px) {
+  .landingButtonsContainer {
+    position: relative;
+    width: 40%;
+    bottom: 300px;
+    left: 500px;
+    z-index:1;
+  }
+}
+
+
+.loginButton {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 100px;
+  border-radius: 8px;
+  background-color: #F0E45D !important;
+  font-family: kallistoBold !important;
+  color: #413C58 !important;
+  z-index: 1;
+}
+
+.loginButtonRemoveUnderline {
+  text-decoration: none;
+}
+
+.createAccountButton {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  background-color: #F0E45D !important;
+  font-family: kallistoBold !important;
+  color: #413C58 !important;
+  z-index: 1;
+}
+
+/*AGENT INQUIRE LINK*/
+.agentInquireParagraph {
+  font-family: kallistoBold;
+  color: #9D9D9D;
+}
+
+.agentInquireLink {
+  font-family: kallistoBold;
+  color: #F0E45D;
+  text-decoration: none;
+}
+
+/*PAGCOR FOOTER*/
+@media (max-width: 415px) {
+  .pagcorIcon {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1023px) {
+  .pagcorIcon {
+    width: 5vw;
+    z-index: 1;
+  }
+}
+
+
+.pagcorFooterFont {
+  color: white;
+}
