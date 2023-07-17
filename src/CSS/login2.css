@@ -26,7 +26,7 @@ body {
   max-width: none !important;
 }
 .landingContainer {
-  height: auto;
+  height: 100%;
   
 }
 
@@ -43,6 +43,51 @@ body {
   /* Add other font properties if needed */
 }
 
+@font-face {
+  font-family: 'kallistoLight';
+  src: url('../Fonts/Kallisto Light.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+/*BACK BUTTON*/
+.backButton {
+  position:absolute;
+  top: 40px;
+  left: 10px;
+  padding: 15px;
+  z-index: 2;
+}
+
+/*MODAL*/
+.modalBox {
+  background-color: #413C58;
+}
+
+.modalBorder .modal-content {
+  border: 1px solid #F0E45D;
+  background-color: transparent;
+}
+
+.modalBorder .modal-dialog {
+  opacity: 0.8;
+}
+
+.modalBorder .modal-footer {
+  border: 0px;
+
+}
+
+.modalText {
+  text-align: center;
+  font-family: kallistoBold;
+  color: #F0E45D;
+}
+
+.yearsOldButton {
+  background-color: #55917F !important;
+  font-family: kallistoBold;
+}
+
 /*LUCKY BREAK PICTURE*/
 @keyframes fadeIn {
   from {
@@ -51,10 +96,6 @@ body {
   to {
     opacity: 1;
   }
-}
-
-.luckyBreakMobileContainer {
-  animation: fadeIn 0.7s;
 }
 
 @media (max-width: 415px) {
@@ -118,10 +159,12 @@ body {
 }
 
 /*PHONE PICTURE*/
-@media (max-width: 415px) {
-  .phone {
-    z-index: 1;
-    width: 96vw;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -132,6 +175,87 @@ body {
     top: 50px;
     width: 50vw;
   }
+}
+
+/*FORM*/
+@media (max-width: 415px) {
+  .login2Form {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .login2Form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 415px) {
+  .login2Button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #F0E45D !important;
+    font-family: kallistoBold !important;
+    color: #413C58 !important;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1023px) {
+  .login2Button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #F0E45D !important;
+    font-family: kallistoBold !important;
+    color: #413C58 !important;
+    z-index: 1;
+  }
+}
+
+.forgotPass {
+  color: #F0E45D;
+  text-decoration: none;
+}
+
+.rememberMe {
+  font-family: kallistoThin;
+  color:white;
+}
+
+.userAndPassword {
+  font-size: 0.9em !important;
+  padding-top:10px !important;
+  padding-bottom: 10px !important;
+  background-color: rgba(251, 251, 251, 0.3) !important; /* Transparent grey background */
+  color: #FFFFFF !important;
+}
+
+.userAndPassword::placeholder {
+  color: #FFFFFF !important; /* Bright white placeholder color */
+}
+
+.userAndPassword::-webkit-input-placeholder {
+  /* WebKit browsers (Chrome, Safari) */
+  color: #FFFFFF !important; /* Bright white placeholder color */
+}
+
+.userAndPassword::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #FFFFFF !important; /* Bright white placeholder color */
+}
+
+.userAndPassword:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #FFFFFF !important; /* Bright white placeholder color */
+}
+
+.userAndPassword:-moz-placeholder {
+  /* Mozilla Firefox 18- */
+  color: #FFFFFF !important; /* Bright white placeholder color */
 }
 
 /*BILLIARD PLAYERS PICTURE*/
@@ -160,6 +284,7 @@ body {
 @media (max-width: 415px) {
   .landingButtonsCol {
     margin-top: 80px !important;
+    z-index: 1;
   }
 }
 
@@ -194,7 +319,7 @@ body {
   }
 }
 
-
+/*BUTTONS*/
 
 .loginButton {
   width: 85%;
@@ -207,48 +332,31 @@ body {
   z-index: 1;
 }
 
-.loginButtonRemoveUnderline {
-  text-decoration: none;
-}
-
-.createAccountButton {
+.facebookLoginButton {
   width: 85%;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 8px;
-  background-color: #F0E45D !important;
-  font-family: kallistoBold !important;
-  color: #413C58 !important;
-  z-index: 1;
+  background-color: #3B5998 !important;
+  font-family: kallistoLight !important;
 }
 
-/*AGENT INQUIRE LINK*/
-.agentInquireParagraph {
-  font-family: kallistoBold;
-  color: #9D9D9D;
+.googleLoginButton {
+  width: 85%;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-radius: 8px;
+  background-color: #EA4335 !important;
+  font-family: kallistoLight !important;
 }
 
-.agentInquireLink {
-  font-family: kallistoBold;
-  color: #F0E45D;
+.linkRemoveUnderline {
   text-decoration: none;
 }
 
-/*PAGCOR FOOTER*/
+/*CONTAINER AFTER BUTTONS*/
 @media (max-width: 415px) {
-  .pagcorIcon {
-    width: 25vw;
+  .login2Container {
+    height: 32vh;
   }
-}
-
-@media (min-width: 1023px) {
-  .pagcorIcon {
-    width: 5vw;
-    z-index: 1;
-  }
-}
-
-
-.pagcorFooterFont {
-  color: white;
 }
