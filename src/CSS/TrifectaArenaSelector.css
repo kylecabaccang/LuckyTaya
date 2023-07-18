@@ -1,0 +1,67 @@
+/*IMPORT FONT(S)*/
+@font-face {
+  font-family: 'kallistoBold';
+  src: url('../Fonts/Kallisto Bold.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+/*HEADER*/
+.trifectaArenaSelectorHeader {
+	font-family: 'kallistoBold';
+	color: white;
+	font-size: 1.5rem;
+}
+
+.trifectaArenaSelectorContainer {
+	height: 100%;
+}
+
+.trifectaArenaSelectorPagcor {
+	margin-top: auto;
+}
+
+/*ARENA SELECTION*/
+.linkRemoveUnderline {
+	text-decoration: none;
+}
+
+.trifectaArenaBoxContainer {
+	position: relative;
+	width: 100%;
+	border-radius: 5px;
+	background: rgb(89,83,120);
+	background: linear-gradient(90deg, rgba(89,83,120,1) 37%, rgba(65,60,88,1) 74%);
+}
+
+.trifectaArenaBoxTitle {
+	font-family: 'kallistoBold';
+	color: #f0e45d;
+}
+
+.trifectaArenaBoxSubtitle {
+	color: white;
+}
+
+/*TRIFECTA ARENA SELECTOR EXTRA CONTAINER*/
+.trifectaArenaSelectorExtraContainer {
+	height: 20vh;
+}
+
+/*PAGCOR FOOTER*/
+@media (max-width: 415px) {
+  .trifectaArenaSelectorPagcorIcon {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1023px) {
+  .trifectaArenaSelectorPagcorIcon {
+    width: 5vw;
+    z-index: 1;
+  }
+}
+
+
+.trifectaArenaSelectorPagcorFooterFont {
+  color: white;
+}

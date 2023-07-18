@@ -13,7 +13,7 @@ import LuckyBreakImage from '../images/luckyBreakYellowWhiteTransparent.png';
 
 
 
-export default function Landing() {
+export default function Login2() {
   /*INITIAL STATES FOR THE CORRESPONDING COMPONETS, false if not initially shown, true if initially shown*/
      const [showPassword] = useState(false);
      const [showModal, setShowModal] = useState(true);

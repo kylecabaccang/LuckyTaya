@@ -1,0 +1,74 @@
+/*IMPORT FONT(S)*/
+@font-face {
+  font-family: 'kallistoBold';
+  src: url('../Fonts/Kallisto Bold.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+@font-face {
+  font-family: 'kallistoHeavyItalic';
+  src: url('../Fonts/Kallisto Heavy Italic.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+@font-face {
+  font-family: 'kallistoMedium';
+  src: url('../Fonts/Kallisto Medium.otf') format('opentype');
+  /* Add other font properties if needed */
+}
+
+/*HEADER*/
+.trifectaEventSelectorHeader {
+	font-family: 'kallistoBold';
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+}
+
+/*HORIZONTAL RULER*/
+.horizontalRuler {
+	color: white;
+	height: 3px !important;
+}
+
+/*UPCOMING EVENTS TIMER*/
+.trifectaEventSelectorUpcoming {
+	font-family: 'kallistoBold';
+	color: white;
+}
+
+@media (max-width: 415px) {
+  .trifectaEventSelectorHeader {
+    font-family: 'kallistoBold';
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    width: 60%;
+  }
+}
+
+/*TRIFECTA EVENT CARDS*/
+.trifectaEventsCardContainer1 {
+	border: solid 0px !important;
+	background: rgb(89,83,120);
+	background: linear-gradient(90deg, rgba(89,83,120,1) 37%, rgba(65,60,88,1) 74%);
+}
+
+.trifectaEventsCardTitle {
+	color: #F0E45D;
+	font-family: kallistoMedium;
+}
+
+.trifectaEventsCardSubtitle {
+	color: white;
+}
+
+.trifectaEventsPlayers {
+	font-family: kallistoBold;
+}
+
+.trifectaEventsCardContainer2 {
+	background-color: #55917F;
+	font-family: kallistoHeavyItalic;
+	color: white;
+}

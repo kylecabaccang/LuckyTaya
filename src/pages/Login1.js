@@ -15,7 +15,7 @@ import LuckyBreakImage from '../images/luckyBreakYellowWhiteTransparent.png';
 
 
 
-export default function Landing() {
+export default function Login1() {
   /*useEffect USED FOR BEING SCROLLED TO THE TOP OF THE PAGE WHEN TRAVERSED INTO THIS PAGE*/
   useEffect(() => {
       window.scrollTo(0, 0);
